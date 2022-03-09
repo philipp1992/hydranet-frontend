@@ -79,7 +79,7 @@ function ChooseBondV2() {
               isLoading={!!treasuryBalance ? false : true}
             />
             <Metric
-              label={t`OHM Price`}
+              label={t`HDX Price`}
               metric={formatCurrency(Number(marketPrice), 2)}
               isLoading={marketPrice ? false : true}
             />
@@ -125,7 +125,7 @@ function ChooseBondV2() {
             <em>
               <Typography variant="body2">
                 Important: New bonds are auto-staked (accrue rebase rewards) and no longer vest linearly. Simply claim
-                as sOHM or gOHM at the end of the term.
+                as sHDX or gHDX at the end of the term.
               </Typography>
             </em>
           </Box>

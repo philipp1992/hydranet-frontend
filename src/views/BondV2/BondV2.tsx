@@ -98,7 +98,7 @@ const BondV2 = ({ index }: { index: number }) => {
             <Box display="flex" flexDirection="row" className="bond-price-data-row">
               <div className="bond-price-data">
                 <Typography variant="h5" color="textSecondary">
-                  <Trans>Bond Price</Trans>
+                  <Trans>HDX Price</Trans>
                 </Typography>
                 <Typography variant="h3" className="price" color="primary">
                   <>

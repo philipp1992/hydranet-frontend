@@ -62,9 +62,9 @@ export const StakeBalances = () => {
 
           <DataRow
             indented
-            title={t`gOHM`}
+            title={t`gHDX`}
             isLoading={!gohmBalances[NetworkId.ARBITRUM_TESTNET].data}
-            balance={`${formatBalance(gohmBalances[NetworkId.ARBITRUM_TESTNET].data, 18)} gOHM`}
+            balance={`${formatBalance(gohmBalances[NetworkId.ARBITRUM_TESTNET].data, 18)} gHDX`}
           />
         </AccordionDetails>
       </Accordion>

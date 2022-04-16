@@ -1,9 +1,10 @@
 name: build and deploy hydranet frontend to aws s3
 
 on:
-  push:
-    branches:
-      - arbitrum
+  workflow_dispatch: 
+  # push:
+  #   branches:
+  #     - arbitrum
 
 jobs:
   deploy:

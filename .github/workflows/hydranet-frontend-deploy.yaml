@@ -34,3 +34,5 @@ jobs:
 
       - name: Deploy
         run: aws s3 sync ./build s3://hydranet-frontend
+      - name: Deploy public
+        run: aws s3 sync ./public s3://hydranet-frontend/public

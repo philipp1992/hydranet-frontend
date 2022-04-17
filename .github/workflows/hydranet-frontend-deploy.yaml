@@ -7,7 +7,7 @@ on:
   #     - arbitrum
 env:
   CI: false
-  PUBLIC_URL: "https://app.hydranet.ai
+  PUBLIC_URL: https://app.hydranet.ai
   
 jobs:
   deploy:

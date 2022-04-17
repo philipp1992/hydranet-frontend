@@ -1,14 +1,14 @@
 name: build and deploy hydranet frontend to aws s3
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
   # push:
   #   branches:
   #     - arbitrum
 env:
   CI: false
   PUBLIC_URL: https://app.hydranet.ai
-  
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -22,7 +22,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-1
 
-      - name: Use Node.js 
+      - name: Use Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
@@ -31,8 +31,7 @@ jobs:
         run: yarn
 
       - name: Build
-        run: yarn build      
+        run: yarn build
 
       - name: Deploy
         run: aws s3 sync ./build s3://hydranet-frontend
-
